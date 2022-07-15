@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgb(68, 209, 238), rgb(176, 206, 250), rgb(68, 209, 238));
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+select > option::first-letter {
+  text-transform: uppercase;
+}
+
+input.invalid,
+select.invalid {
+  border: 1px solid red;
+}
+
+.form {
+  &_wrapper {
+    min-width: 500px;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid rgb(158, 158, 158);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    background-color: rgb(176, 206, 250);
+  }
+}
+
+.modal {
+  &_wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(187, 187, 187, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
