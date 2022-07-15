@@ -30,7 +30,7 @@
         placeholder="Enter your current city name."
       >
       <small v-if="$v.cityFrom.$dirty && !$v.cityFrom.required" class="invalid-feedback position-absolute">Enter your current city name.</small>
-      <small v-if="$v.cityTo.$dirty && !$v.cityTo.minLength" class="invalid-feedback position-absolute">
+      <small v-if="$v.cityFrom.$dirty && !$v.cityFrom.minLength" class="invalid-feedback position-absolute">
         {{`City name mast be ${this.$v.cityFrom.$params.minLength.min} symbols minimum, now ${this.cityFrom.length}`}}
       </small>
     </div>
